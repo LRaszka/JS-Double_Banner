@@ -21,6 +21,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform 0.5s linear;
 }
 
 .slide-left h2 {
@@ -46,6 +47,7 @@ body {
     position: absolute;
     top: 0;
     left: 35%;
+    transition: transform 0.5s linear;
 }
 
 .slide-right > div {
@@ -56,7 +58,7 @@ body {
 }
 
 .color-1-slide {
-    background-color: #FD3555;
+    background-color: #45A8BC;
 }
 
 .color-2-slide {
@@ -68,7 +70,7 @@ body {
 }
 
 .color-4-slide {
-    background-color: #45A8BC;
+    background-color: #FFB866;
 }
 
 .image-1 {
