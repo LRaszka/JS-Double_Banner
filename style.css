@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container-slider {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-left {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide-left h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: -40px;
+}
+
+.slide-left > div { /*všechny divy v slide-left*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.slide-right {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+
+.slide-right > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover; /*zobrazeni celeho obrazku*/
+    background-position: center center;
+}
+
+.color-1-slide {
+    background-color: #FD3555;
+}
+
+.color-2-slide {
+    background-color: #2A86BA;
+}
+
+.color-3-slide {
+    background-color: #252E33;
+}
+
+.color-4-slide {
+    background-color: #45A8BC;
+}
+
+.image-1 {
+    background-image: url(img/obr1.jpg);
+}
+
+.image-2 {
+    background-image: url(img/obr2.jpg);
+}
+
+.image-3 {
+    background-image: url(img/obr3.jpg);
+}
+
+.image-4 {
+    background-image: url(img/obr4.jpg);
+}
+
+.arrow-buttons .arrow {
+    position: absolute;
+    z-index: 100;
+    left: 35%;
+    top: 50%;
+}
+
+.arrow img {
+    width: 50px;
+}
+
+.arrow-down img {
+    transform: translateX(-100%); /*posunutí o 100% doleva*/
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow-down img:hover {
+    border: 1px solid black;
+}
+
+.arrow-up img {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow-up img:hover {
+    border: 1px solid black;
+}
